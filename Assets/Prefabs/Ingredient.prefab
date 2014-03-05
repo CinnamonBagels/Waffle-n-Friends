@@ -67,6 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c47608949ee6c774d97dc29288c096e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waffle: {fileID: 100000, guid: 5ed0d595284a7e640bf1b6829ab08e2f, type: 2}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

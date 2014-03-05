@@ -1,8 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Hand : MonoBehaviour {
-
     public float speed = 2f;
 
     // Use this for initialization
