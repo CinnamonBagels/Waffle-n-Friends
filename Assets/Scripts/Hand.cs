@@ -3,14 +3,24 @@ using System.Collections;
 
 public class Hand : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		//transform.Translate(Input.GetAxis("Horizontal"), 0, 0);
-		transform.Translate(10, 10, 0);
-	}
+    public float speed = 2f;
+
+    // Use this for initialization
+    void Start () {
+    }
+    
+    // Update is called once per frame
+    void Update () {
+        // Get the user's input
+        var x = Input.GetAxis( "Horizontal" ) * speed;
+        var y = Input.GetAxis( "Vertical" ) * speed;
+
+        Vector2 velocity = new Vector2( x, y );
+
+        if ( velocity == Vector2.zero ) {
+            rigidbody2D.velocity = Vector2.zero;
+        } else {
+            rigidbody2D.velocity = velocity;
+        }
+    }
 }

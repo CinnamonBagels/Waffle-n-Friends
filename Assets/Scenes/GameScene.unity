@@ -84,6 +84,7 @@ GameObject:
   - 4: {fileID: 175886425}
   - 212: {fileID: 175886424}
   - 114: {fileID: 175886423}
+  - 50: {fileID: 175886426}
   m_Layer: 0
   m_Name: Hand
   m_TagString: Untagged
@@ -102,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d494e1b5b73c28c448b73c85870738e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!212 &175886424
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -136,6 +138,21 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!50 &175886426
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 175886422}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1 &237560907
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +343,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f73feccf527fd44498b3249c9e7d208, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSystem: {fileID: 0}
 --- !u!4 &789134220
 Transform:
   m_ObjectHideFlags: 0
