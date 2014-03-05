@@ -17,8 +17,6 @@ public class Hand : MonoBehaviour {
 
         if ( velocity == Vector2.zero ) {
             rigidbody2D.velocity = Vector2.zero;
-        } else {
-            rigidbody2D.velocity = velocity;
         }
     }
 }
